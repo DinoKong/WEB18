@@ -55,5 +55,11 @@
     ${company}
     ${user.name}
     ${list[1].name }
+
+    <%--el可以执行表达式运算--%>
+    ${1+1 }
+    ${1==1?true:false}
+    <%--empty 判定某个对象是否是null  是null返回true--%>
+    ${empty list}
 </body>
 </html>
