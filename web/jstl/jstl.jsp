@@ -18,6 +18,18 @@
     <%--jstl标签经常会和el配合使用--%>
     <%-- test 代表的返回boolean的表达式--%>
     <c:if test="${count==10}">xxxx</c:if>
-    <c:if test="1!=1">yyyy</c:if>
+    <%--forEach模拟--%>
+    <c:forEach begin="0" end="5" var="i">
+        ${i}
+    </c:forEach>
+    <%---模拟增强for productList---List<Product>
+        for (Product product : productList){
+            syso(product.getPname())
+        }
+    -%>
+    <%--items: 一个集合或数组 var:代表集合中的某一个元素--%>
+    <%--<c:forEach items="${productList }" var="pro">--%>
+        <%--${pro.pname}--%>
+    <%--</c:forEach>--%>
 </body>
 </html>
